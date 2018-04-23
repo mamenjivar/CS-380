@@ -1,4 +1,14 @@
-public class cml{
+/*
+ * Name: Miguel Menjivar
+ * Course: CS 380 Computer Networks
+ * gitRepositories.java
+ *
+ * Assignment: Poject #1
+ * Date: 4/22/18
+ *
+ * Description: Github repositories
+ */
+public class gitRepositories{
   public static void main(String[] args){
     int count = 0;
 
@@ -29,9 +39,10 @@ public class cml{
     }
   }
 
-  /**
-  * 
-  */
+  /*
+   * Will print out the instructions for this particular
+   * project and how the user will be able to utilize this program
+   */
   public static void helpMe(){
     System.out.println("myRepositories\n");
 
