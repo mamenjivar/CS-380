@@ -8,6 +8,9 @@
  *
  * Description: Github repositories
  */
+import org.eclipse.egit.github.core.Repository;
+import org.eclipse.egit.github.core.serviceRepositoryService;
+
 public class gitRepositories{
   public static void main(String[] args){
     int count = 0;
@@ -22,7 +25,7 @@ public class gitRepositories{
       switch(args[count]){
         case "--help":
           System.out.println(args[count]);
-          helpMe();
+          help();
           count++;
           break;
         case "-why":
@@ -43,13 +46,14 @@ public class gitRepositories{
    * Will print out the instructions for this particular
    * project and how the user will be able to utilize this program
    */
-  public static void helpMe(){
-    System.out.println("myRepositories\n");
+  public static void help(){
+    System.out.println("myRepositories USERNAME | --help\n");
 
     System.out.println("\'myReposities\' returns a list of repositories based on username\n");
 
     System.out.println("Version\t: 1.0.0");
     System.out.println("Author\t: Miguel Menjivar");
+    System.out.println("Contact\t: mamenjivar@cpp.edu");
 
   }
 }
