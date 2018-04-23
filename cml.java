@@ -12,8 +12,7 @@ public class cml{
       switch(args[count]){
         case "--help":
           System.out.println(args[count]);
-          help();
-          System.out.println("This is the help section of the program");
+          helpMe();
           count++;
           break;
         case "-why":
@@ -21,8 +20,8 @@ public class cml{
           System.out.println("this is a why section");
           count++;
           break;
+        // end of program
         case ".eot":
-          System.out.println("This is the end of the program");
           loop = false;
           count++;
           break;
@@ -30,7 +29,10 @@ public class cml{
     }
   }
 
-  public void help(){
+  /**
+  * 
+  */
+  public static void helpMe(){
     System.out.println("myRepositories\n");
 
     System.out.println("\'myReposities\' returns a list of repositories based on username\n");
@@ -39,6 +41,4 @@ public class cml{
     System.out.println("Author\t: Miguel Menjivar");
 
   }
-
-  public void
 }
